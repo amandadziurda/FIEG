@@ -326,3 +326,53 @@ h2 {
     .botao:last-child {
         border-radius: 0 40px 0 0;
     }
+
+
+
+
+
+
+
+
+
+.button {
+  background-color: #F1EDEF;
+  color: #b4f363;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #198817; /* Cor ao clicar */
+  color: #b4f363;
+}
+
+.imagem {
+  width: 600px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  display: none;
+}
+
+/* Estilos para mostrar as imagens */
+#img1 {
+  display: block;
+}
+
+/* Classes para alternar a imagem */
+#botao2:active + #img2 {
+  display: block;
+}
+
+#botao3:active + #img3 {
+  display: block;
+}
+
+#botao4:active + #img4 {
+  display: block;
+}
+
+#botao5:active + #img5 {
+  display: block;
+}
