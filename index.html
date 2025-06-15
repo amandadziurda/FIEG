@@ -156,6 +156,170 @@ class="imagem" id="img1"
 
 
 
+
+
+
+
+<style>
+    .abas {
+      display: flex;
+      gap: 10px;
+    }
+
+    .aba-label {
+      padding: 10px 20px;
+      background: #ccc;
+      cursor: pointer;
+      border-radius: 5px 5px 0 0;
+    }
+
+    input[name="aba"] {
+      display: none;
+    }
+
+    .conteudo {
+      display: none;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-top: none;
+    }
+
+    input#aba1:checked ~ .conteudos .conteudo1,
+    input#aba2:checked ~ .conteudos .conteudo2,
+    input#aba3:checked ~ .conteudos .conteudo3,
+    input#aba4:checked ~ .conteudos .conteudo4,
+    input#aba4:checked ~ .conteudos .conteudo5 {
+
+      display: block;
+    }
+
+    input#aba1:checked + label,
+    input#aba2:checked + label,
+    input#aba3:checked + label,
+    input#aba4:checked + label,
+    input#aba5:checked + label {
+      background: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<section id="conteudo" class="nav-img">
+        <section class="conteudo-principal">
+        <h2 class="titulo-principal">Onde tudo se conecta?<span> </span></h2>
+        <div class="abas-container">
+  <!-- Abas -->
+  <input type="radio" name="aba" id="aba1" checked>
+  <label class="aba-label" for="aba1">AGRICULTURA E COMÉRCIO</label>
+
+  <input type="radio" name="aba" id="aba2">
+  <label class="aba-label" for="aba2">TECNOLOGIA</label>
+
+  <input type="radio" name="aba" id="aba3">
+  <label class="aba-label" for="aba3">FLUXO DE PESSOAS</label>
+
+  <input type="radio" name="aba" id="aba4">
+  <label class="aba-label" for="aba4">HISTÓRIA E CULTURA</label>
+
+<input type="radio" name="aba" id="aba5">
+  <label class="aba-label" for="aba5">TURISMO</label>
+
+
+<div class="conteudo">
+  <div class="conteudos">
+    <div class="conteudo conteudo1">
+     <div class="abas-textos">
+                <div class="aba-conteudo ativo">
+                    <div style= "text-align: center;">
+                            <a href="agricultura.comercio.html">
+                  <img src="img/Agricultura.Comércio.png" title="A imagem apresenta alguns alimentos orgânicos e um texto explicativo" alt="imagem: https://safrasnews.com.br/dia-da-agricultura-a-arte-de-cultivar-a-terra-e-produzir-alimentos/ texto: O autor"
+                            class="img-fluid rounded- 5" width="600" loading="lazy">
+                            </a>
+    <div class="contador">
+    </div>
+    </div>
+                </div>
+                </div>
+
+
+    <div class="conteudo conteudo2">
+     <div class="aba-conteudo">
+                    <div style= "text-align: center;">
+              <a href="tecnologia.html">
+                  <img src="img/Tecnologia.png" title="A imagem mostra um drone em uma plantação e um texto explicativo" alt="imagem: https://www.sygmasistemas.com.br/tecnologia-na-agricultura/ texto: O autor”
+                  class="img-fluid rounded-5" width="600" loading="lazy">
+              </a>
+                    <div class="contador">
+                    </div>
+                    </div>
+                </div>
+    </div>
+
+    <div class="conteudo conteudo3">
+      <div class="aba-conteudo">
+                    <div style= "text-align: center;">
+              <a href="fluxo.de.pessoas.html">
+                  <img src="img/Fluxo.de.Pessoas.png" title="A imagem apresenta diversas pessoas e um texto explicativo" alt="imagem: https://www.archdaily.com.br/br/873962/espacos-publicos-10-principios-para-conectar-as-pessoas-e-a-rua texto: O autor”
+                            class="img-fluid rounded-5" width="600" loading="lazy">
+              </a>
+                    <div class="contador">
+                    </div>
+                    </div>
+                </div>
+
+    </div>
+    <div class="conteudo conteudo4">
+      <div class="aba-conteudo">
+                    <div style= "text-align: center;">
+              <a href="história.e.cultura.html">
+                  <img src="img/História.e.Cultura.png" title="A imagem mostra vários pinhões e um texto explicativo" alt=" imagem: https://tvci.com.br/cidades/esta-aberta-a-temporada-de-pinhao-no-parana/ texto: O autor”
+                            class="img-fluid rounded-5" width="600" loading="lazy">
+              </a>
+                    <div class="contador">
+                    </div>
+                    </div>
+                </div>
+    </div>
+
+<div class="conteudo conteudo5">
+      <div class="aba-conteudo">
+                    <div style= "text-align: center;">
+              <a href="turismo.html">
+                  <img src="img/Turismo.png" title="A imagem apresenta as Cataratas do Iguaçu e um texto explicativo" alt="imagem: https://viagemeturismo.abril.com.br/cidades/foz-do-iguacu/ texto: O autor”
+                            class="img-fluid rounded-5" width="600" loading="lazy">
+              </a>
+                    <div class="contador">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
         <section id="conteudo" class="nav-img">
         <section class="conteudo-principal">
         <h2 class="titulo-principal">Onde tudo se conecta?<span> </span></h2>
