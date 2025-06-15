@@ -542,6 +542,123 @@ class="imagem" id="img1"
 
 
 
+            <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+
+    .tab-container {
+      width: 500px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Esconde os radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Estilo dos botões (abas) */
+    .tab-label {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: -5px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    /* Cor diferente para a aba selecionada */
+    input[type="radio"]:checked + label {
+      background-color: #cce5ff; /* Azul claro */
+      border-bottom: 1px solid white;
+      font-weight: bold;
+    }
+
+    /* Esconde todos os conteúdos por padrão */
+    .tab-content {
+      display: none;
+      border: 1px solid #ccc;
+      border-top: none;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Mostra o conteúdo da aba ativa */
+    #tab1:checked ~ .content #content1,
+    #tab2:checked ~ .content #content2,
+    #tab3:checked ~ .content #content3,
+    #tab4:checked ~ .content #content4,
+    #tab5:checked ~ .content #content5 {
+      display: block;
+    }
+
+    /* Imagens responsivas */
+    .tab-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    /* Organização dos botões */
+    .tab-labels {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="tab-container">
+  <!-- Radio Buttons -->
+  <input type="radio" name="tabs" id="tab1" checked>
+  <input type="radio" name="tabs" id="tab2">
+  <input type="radio" name="tabs" id="tab3">
+  <input type="radio" name="tabs" id="tab4">
+  <input type="radio" name="tabs" id="tab5">
+
+  <!-- Labels como abas -->
+  <div class="tab-labels">
+    <label class="tab-label" for="tab1">1</label>
+    <label class="tab-label" for="tab2">2</label>
+    <label class="tab-label" for="tab3">3</label>
+    <label class="tab-label" for="tab4">4</label>
+    <label class="tab-label" for="tab5">5</label>
+  </div>
+
+  <!-- Conteúdo das Abas -->
+  <div class="content">
+    <div class="tab-content" id="content1">
+      <img src="Feira1.jpg" alt="Imagem 1">
+    </div>
+    <div class="tab-content" id="content2">
+      <img src="Comércio1.jpg" alt="Imagem 2">
+    </div>
+    <div class="tab-content" id="content3">
+      <img src="Feira1.jpg” alt="Imagem 3">
+    </div>
+    <div class="tab-content" id="content4">
+     <img src="Comércio1.jpg" alt="Imagem 2">
+    </div>
+    <div class="tab-content" id="content5">
+<img src="Feira1.jpg” alt="Imagem 3">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
         
         <section id="contato">
             <div class="container p-5 d-flex justify-content-center">
