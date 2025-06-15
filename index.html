@@ -654,6 +654,84 @@ class="imagem" id="img1"
 
 
 
+<style>
+
+    .tab-container {
+    background-color:#F1EDEF;
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Esconde os radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Estilo dos botões (abas) */
+    .tab-label {
+      display: inline-block;
+      font-family: 'Chakra Petch', sans-serif;
+    background-color: #F1EDEF;
+    color: var(--branco);
+    display:block;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+    }
+
+    /* Cor diferente para a aba selecionada */
+    input[type="radio"]:checked + label {
+      background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+    }
+
+    /* Esconde todos os conteúdos por padrão */
+    .tab-content {
+      display:block;
+      border: 1px solid #ccc;
+      border-top: none;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Mostra o conteúdo da aba ativa */
+    #tab1:checked ~ .content #content1,
+    #tab2:checked ~ .content #content2,
+    #tab3:checked ~ .content #content3,
+    #tab4:checked ~ .content #content4,
+    #tab5:checked ~ .content #content5 {
+      display: block;
+    }
+
+    /* Imagens responsivas */
+    .tab-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    /* Organização dos botões */
+    .tab-labels {
+      border-radius: 40px 40px 0 0;
+      display: block;
+ }
+  </style>
+
+
+
+
+
+
+    
+
+
         
         <section id="contato">
             <div class="container p-5 d-flex justify-content-center">
