@@ -92,6 +92,56 @@ section {
 }
 
 
+
+.button {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #3e8e41; /* Cor ao clicar */
+  color: white;
+}
+
+.imagem {
+  width: 200px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  display: none;
+}
+
+/* Estilos para mostrar as imagens */
+#img1 {
+  display: block;
+}
+
+/* Classes para alternar a imagem */
+#botao2:active + #img2 {
+  display: block;
+}
+
+#botao3:active + #img3 {
+  display: block;
+}
+
+#botao4:active + #img4 {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
 #tropicalia {
     position: relative;
     padding-top: 5rem;
