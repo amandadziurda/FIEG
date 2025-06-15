@@ -45,6 +45,66 @@ section {
 
 
 
+
+
+.tab-container {
+      width: 500px;
+      margin: 0 auto;
+      border: 1px solid #198817;
+      padding: 10px;
+    }
+
+    /* Esconde os radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Estilo dos botões */
+    .tab-label {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 5px;
+      background-color: #F1EDEF;
+      border: 1px solid #198817;
+      cursor: pointer;
+      border-radius: 4px 4px 0 0;
+    }
+
+    /* Estilo quando o botão está ativo */
+    input[type="radio"]:checked + label {
+      background-color: #198817;
+      border-bottom: 1px solid white;
+      font-weight: bold;
+    }
+
+    /* Esconde todos os conteúdos por padrão */
+    .tab-content {
+      display: block;
+      border: 1px solid #198817;
+      border-top: none;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Mostra o conteúdo da aba ativa */
+    #tab1:checked ~ .content #content1,
+    #tab2:checked ~ .content #content2,
+    #tab3:checked ~ .content #content3,
+    #tab4:checked ~ .content #content4,
+    #tab5:checked ~ .content #content5 {
+      display: block;
+    }
+
+    /* Imagens responsivas */
+    .tab-content img {
+      max-width: 100%;
+      height: auto;
+    }
+
+
+
+
+
 .inicio-fundo {
     /* aula 3 */
     background-image: url('Fundo.Turvo.jpg');
