@@ -470,6 +470,101 @@ h2 {
 
 
 
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #F1EDEF;
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+}
+.botoes {
+    display: block;
+}
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+.abas-textos{
+    background-color:#F1EDEF;
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display:block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-family: 'Lemon', serif;
+    font-size: 28px;
+    text-align: center;
+    color: #51ff1d;
+    
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.contador{
+    font-size: 20px;
+    text-align: center;
+    background-color:#F1EDEF;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+}
+.image-button:hover {
+  opacity: 0.8;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #2ecc71; /* Cor do botão selecionado */
+}
+
+
+/* Simula a mudança de imagem com base no botão selecionado */
+#img1:checked ~ .image-container #selected-image { content: url(img/Agricultura.Comércio.png); }
+#img2:checked ~ .image-container #selected-image { content: url(img/Tecnologia.png); }
+#img3:checked ~ .image-container #selected-image { content: url(img/Fluxo.de.Pessoas.png); }
+#img4:checked ~ .image-container #selected-image { content: url(img/História.e.Cultura.png); }
+#img5:checked ~ .image-container #selected-image { content: url(img/Turismo.png); }
+
 
 
 .
