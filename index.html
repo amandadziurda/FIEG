@@ -33,6 +33,78 @@
         </nav>
     </header>
 
+
+
+
+
+    
+    <style>
+/* Alto contraste */
+    #contraste:checked ~ body,
+    .alto-contraste {
+      background: #000;
+      color: #fff;
+    }
+
+    /* Botão de acessibilidade */
+    .acessibilidade-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    #toggle-acessibilidade {
+      display: none;
+    }
+
+    .botao {
+      cursor: pointer;
+      background: #007BFF;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    /* Mostrar opções se checkbox ativado */
+    #toggle-acessibilidade:checked ~ .opcoes {
+      display: block;
+    }
+
+    .opcoes {
+      display: none;
+      margin-top: 10px;
+      background: #eee;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    /* ScrollReveal alternativa com CSS */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: revealAnim 0.6s ease forwards;
+    }
+
+    .reveal.delay-1 { animation-delay: 0.5s; }
+    .reveal.delay-2 { animation-delay: 1s; }
+    .reveal.delay-3 { animation-delay: 1.5s; }
+
+    @keyframes revealAnim {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+
+
+
+
+
+    
     <main class="container my-5">
 
         <section id="inicio" class="my-5">
